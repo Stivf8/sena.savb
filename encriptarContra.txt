@@ -1,0 +1,13 @@
+/*SH: Actualizar Contrasena encriptada*/
+
+UPDATE Usuario SET contrasena_usu = aes_encrypt('123456789','882376') where id_usu = 1
+
+/*SH: Inserta Contrasena encriptada*/
+
+INSERT INTO usuario (id_usu, Rol_id_rol, Usuario, contrasena_usu) VALUES(NULL,'3','7840',aes_encrypt('7840','xyz123'))
+
+
+/*SH: Consulta Contrasena encriptada*/
+
+
+select cast(aes_decrypt(contrasena_usu, x+882376) as char) from Usuario WHERE Usuario=200700;

@@ -1,0 +1,116 @@
+git init  
+se utiliza para inicializar con el repositorio de git hub donde estará guardando los archivos una sola vez por carpeta.
+
+git status -s
+se utiliza para ver los estados de los archivos si estan modificados/no tiene seguimiento/tiene seguimiento/ si se eliminaron/ si se crearon.
+
+git add . / git add [nombre_archivo] 
+se utiliza para agregar al archivo en "area local".
+
+git commit -m""
+se utiliza para crear una version de los archivos modificados o creados en el area local.
+
+git log --oneline
+se utiliza para regresar a una version antigua de un archivo que queremos en visualizar y poder escoger una version antigua.
+
+git reset --hard [ID_version]
+se utiliza para regresar a una version antigua por medio de un identificardor que tiene cada modificacion que se le halla ello.
+
+git remote add origin
+se utiliza para buscar un repositorio en github y llamarlo para almacenar los archhivos a subir.
+
+git push
+se utiliza para subir los archivos a la nube en github.
+
+git tag [nombre del tag] -m"[cometario]
+Se ultiliza para crear versiones de nuestro proyectos en github.
+
+git push --tags
+se ultiliza para subir a github. y ver reflejadas las modificaciones.
+
+git branch [Nombre de la rama o branch]
+se utiliza para crear ramas o branchs en el proyecto en github.
+
+git branch 
+se utiliza para saber como en que rama o branch nos encontramos.
+
+git checkout
+ se utiliza para entrar a una rama o branch que tengamos en git hub.
+
+ 
+git merge [nombre de la union]
+se utiliza para unir las modificaciones que se inicieron en la ramas o branch en github.
+
+git branch -d [nombre de una rama]
+se utiliza para eliminar una rama que no necesitamos en github.
+
+
+
+
+
+
+
+
+
+working directory	area local	local reposity		remote/reposity en git hub
+
+git add -------------------->
+			git commit------------>
+					git push---------------------------->
+						<---------------------------------git fetch
+<---------------------------------------git checkout
+<---------------------------------------git merge		
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
+echo "# SAVB" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/ajcabezas7/SAVB.git
+git push -u origin main
+
+se utiliza para crear un repositorio desde la consola.	
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
+git remote add origin https://github.com/ajcabezas7/SAVB.git
+git branch -M main
+git push -u origin main
+
+Se utiliza para ubicar el repositorio existente en git hub para subir archivos. 
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
+repositorios:
+SAVB
+https://github.com/ajcabezas7/SAVB.git
+
+
+
+
+
+
+SELECT Correo
+FROM (
+    SELECT correoSena_fun as Correo
+    FROM funcionario
+   WHERE correoSena_fun is not null
+    
+    UNION ALL
+
+    SELECT correoSena_voc as Correo
+    FROM vocero
+    WHERE correoSena_voc is not null
+    
+    UNION ALL
+    
+    SELECT correoSena_ins as Correo
+    FROM instructor
+    WHERE correoSena_ins is not null
+) correo
+
+                  					
+	
+	

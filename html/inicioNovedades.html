@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+    <html lang="es">
+
+        <head>
+            <title>SAVB</title>
+            <link rel="stylesheet" href="css/estilos.css">
+           <link rel="stylesheet" href="css/bootstrap.min.css">
+           <script type="text/javascript" src="js/bootstrap.min.js"></script>
+           <script type="text/javascript" src="js/jquery-3.5.1.min.map"></script>
+           <img src="imagenes/savb.png" width="90" height="90" align="left">
+           <img src="imagenes/senalogo.png" width="90" height="90" align="right">
+       </head>
+
+
+<body>        
+
+           <!--ANUNCIO PRINCIPAL DE TODAS LAS PANTALLAS DEL APLICATIVO SAVB-->
+           <header>
+               <div class="container-fluid">              
+                   <h1 align="center"><br><br>Sistema de Administracion de Voceros de Bienestar</h1><br>
+                   <button type="button" name="exit" value="exit"><a href="php/salir.php">EXIT</a></button>
+
+               </div>
+           </header>   
+
+           <!--MENU DE NAVEGACION DE SAVB-->
+           
+           <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+               <div class="container">
+
+                   <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navegacion">
+                       <span class="navbar-toggler-icon"></span>
+                   </button>
+
+                   <div class="navbar-collapse" id="navegacion">
+                       <ul class="navbar-nav navbar-auto">
+
+                           <li><a class="nav-link" href="inicioNoticias.html" title="Inicio Noticias">Noticias</a></li>
+                           <li class="nav-item"><a class="nav-link" href="inicioVoceros.html" title="Gestion de Voceros">Voceros</a></li>
+                           <li class="nav-item"><a class="nav-link" href="inicioNovedades.html" title="Gestion de Novedades">Novedades</a></li>
+                           <li class="nav-item"><a class="nav-link" href="inicioChat.html" title="Chat">Chat</a></li>
+                           <li class="nav-item"><a class="nav-link" href="inicioPefil.html" title="Gestion del Perfil">Perfil</a></li>
+                           <li class="nav-item"><a class="nav-link" href="inicioUsuarios.html" title="Gestion de Usuarios">Usuarios</a></li>
+                           
+                   
+                       </ul>
+                   </div>
+               </div>
+              
+           </nav>  
+
+           <aside class="container">
+
+
+               
+               <!--PARRAFO EXPLICATIVO POR PANTALLA-->
+               <h2 align="center">Gestion De Vocero</h2> 
+               <p align="center">
+                   Querido Usuario, En esta pantalla se podra realizar la gestion o consulta de datos de los Voceros.
+               </p>
+                 <div class="container">
+                     <div class="row">
+                         <div class="col-md-4">
+                <h4 align="center">
+                    
+                            <textarea name="respuestaNovedad" id="respuestaNovedad" cols="30" rows="5" placeholder="Escribe la respuesta que le daras al vocero sobre la novedad reportada"></textarea><textarea name="reportarNovedad" id="reportarNovedad" cols="30" rows="5" placeholder="Escribe la novedad ocurrida en tu ficha"></textarea><br>
+                         </div>
+                            <div class="col-md-8" align="center">
+
+                            </h4>
+                            <br>
+                            <h4>SIN RESPONDER</h4>
+                         
+                         <table border="1">
+                             <tr>
+                                 <th>ID</th>
+                                 <th>Conetenido</th>
+                                 <th>Ficha</th>
+                             </tr>
+                             <tr>
+                                <td>idNovedad</td>
+                                <td>contenidonovedad</td>
+                                <td>numeroFicha</td>
+                            </tr>
+                         </table>
+                            <br>
+                            <h4>RESPONDIDAS</h4>
+                         
+                         <table border="1">
+                             <tr>
+                                 <th>ID</th>
+                                 <th>Conetenido</th>
+                                 <th>Ficha</th>
+                             </tr>
+                             <tr>
+                                <td>idNovedad</td>
+                                <td>contenidonovedadR</td>
+                                <td>numeroFicha</td>
+                            </tr>
+                         </table>
+
+                            </div> 
+                
+                    </div>
+                </div>
+                <hr>
+                <div class="container"></div>
+                    <div class="row"></div>
+                        <div class="col-md-12" align="left">
+                <h5>
+                    <label for="EstadoNovedad">Estado de Novedad</label>
+                <select name="Actualizar Estado de Novedad">
+                    <option value="Pendiente">Pendiente</option>
+                    <option value="En Proceso">En Proceso</option>
+                    <option value="Solucionada">Solucionada</option>
+                </select>
+                
+                <input align="right"type="submit" value="Enviar">
+            
+                </h5>
+            </div>
+            </aside>
+                                 
+
+
+</body>
